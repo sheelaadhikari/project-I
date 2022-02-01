@@ -31,12 +31,13 @@ body {
 }
 
 .info-box {
+    display: none;
     width: 540px;
     background: #fff;
     border-radius: 5px;
 }
 
-.info-box.info-title {
+.info-box .info-title {
     height: 640px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
@@ -47,16 +48,55 @@ body {
     font-weight: 600;
 }
 
-.info-box.info-list {
+.info-box .info-list {
     padding: 15px 35px;
 }
 
-.info-box.info-list.info {
+.info-box .info-list .info {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.info-box.info-list.info span {
+.info-box .info-list .info span {
     font-weight: 600;
     color: #007bff;
+}
+
+.info-box .buttons {
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgrey;
+}
+
+.info-box .buttons button {
+    margin: a 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buttons button.restart {
+    color: #fff;
+    background: #007bff;
+}
+
+.buttons button.restart:hover {
+    background: #007bff;
+}
+
+.buttons button.quit {
+    color: #007bff;
+}
+
+.buttons button.quit:hover {
+    color: #fff;
+    background: #007bff;
 }
