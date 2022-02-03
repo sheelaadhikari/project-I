@@ -43,10 +43,16 @@
 // }
 // numbers.forEach(printTriple);
 
-function hoist() {
-    var message;
-    console.log(message);
-    message = 'Hoisting is all the rage!'
-}
 
-hoist(); // Ouput: undefined
+
+//return if the number is 100 or sum of the number is 100 otherwise false using javascript fumction
+function checkIt(a, b) {
+    if (a + b === 100 || (a = 100, b = 100)) {
+        return "true";
+    } else {
+        return "error";
+    }
+
+}
+console.log(checkIt(100, 0));
+console.log(checkIt(50, 50));
