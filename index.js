@@ -47,13 +47,16 @@
 
 //return if the number is 100 or sum of the number is 100 otherwise false using javascript fumction
 function checkIt(a, b) {
-    if (a + b === 100 || (a = 100, b = 0)) {
+    if (a + b === 100 || (a === 100 && b === 0) || (a === 0 && b === 100)) {
         return "true";
     } else {
         return "error";
     }
 
 }
-console.log(checkIt(100, 0));
+console.log(checkIt(10, 0));
 console.log(checkIt(50, 50));
-console.log(checkIt(40, 40));
+console.log(checkIt(100, 40));
+console.log(checkIt(100, 0));
+console.log(checkIt(0, 0));
+console.log(checkIt(100, 0));
