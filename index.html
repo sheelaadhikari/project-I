@@ -3,8 +3,55 @@
 <html>
 
 <body>
+    <!-- <div id="div1">
+        <h1 id="heading"> hello</h1>
+        <button onclick="alert('hi')"> click</button>
+    </div>
 
-    <div id="mydiv">
+    <script type="text/javascript">
+        const mydiv1 = document.getElementById("div-1");
+        const heading = document.getElementById("heading");
+
+        heading.addEventListener("click", function() {
+            div1.style.color = blue;
+
+
+        });
+    </script> -->
+
+
+    <h1>Counter</h1>
+    <br>
+    <span id="myText"></span>
+    <br>
+    <button id="myBtn">Click Me!</button>
+    <script>
+        let number = 100;
+
+        function myFunction() {
+
+            document.getElementById("myText").innerHTML = number;
+        }
+
+        function update() {
+            number = number - 1;
+            myFunction();
+        }
+        var btn = document.getElementById("myBtn");
+        btn.addEventListener("click", update);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="mydiv">
         <p id="myp">sheela adhikari</p>
     </div><br>
 
@@ -20,6 +67,8 @@
 
         const myp2 = document.getElementById("myp2");
         const mydiv2 = document.getElementById("mydiv2");
+
+
         myp.addEventListener("click", function() {
             mydiv.style.background = "lightblue"
         });
@@ -30,7 +79,18 @@
         myp2.addEventListener("click", function() {
             mydiv2.style.color = "white";
         });
-    </script>
+
+        myp2.addEventListener("click", function() {
+            mydiv2.textContent = "adhikarisheela";
+        });
+    </script> -->
+
+
+
+
+
+
+
 </body>
 
 </html>
