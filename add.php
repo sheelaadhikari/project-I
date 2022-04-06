@@ -26,7 +26,7 @@ try {
 </head>
 
 <body>
-    <form action="login.php" method="post">
+    <form action="add.php" method="post">
         <div class="imgcontainer">
             <img src="/avatar.jpeg" alt="Avatar" class="avatar">
         </div>
@@ -65,9 +65,12 @@ try {
 </html>
 
 <?php
-if(isset($_POST["submit"])){
-    echo("it works");
-    $_GET['username'];
+if(isset($_POST)){
+    echo $_POST['title']."<br/>",$_POST['username']."<br/>",$_POST['id']."<br/>",$_POST['Product Name']."<br/>",$_POST['price'] ."<br/>",$_POST['valid-upto']."<br/>",$_POST['location']."<br/>";
+   
+
+  
+ 
     
 }
 ?>
